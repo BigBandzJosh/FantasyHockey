@@ -5,14 +5,19 @@ public class Team {
     public String name;
     public void TeamInfo( ArrayList<String> teams, ArrayList<String> players) {
         Scanner input = new Scanner(System.in);
-        int teamCount = 3;
+
         try {
-        for (int i = 0; i < teamCount; i++) {
-            System.out.println("Enter the name of your team: ");
-            String teamName = input.nextLine();
-            teams.add(teamName);
-            System.out.println("Team name: " + teamName);
-        }
+            for (int i = 0; i < 3; i++) {
+                System.out.println("Enter the name of your team: ");
+                teams.add(input.nextLine());
+                System.out.println("Teams: " + teams);
+                for (int j = 0; j < 3; j++) {
+                    System.out.println("Enter the name of your player: ");
+                    players.add(input.nextLine());
+                    System.out.println("Players: " + players);
+                }
+            }
+
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
