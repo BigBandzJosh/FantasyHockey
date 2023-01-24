@@ -20,11 +20,11 @@ public class Team {
         for (int i = 0; i < teams.size(); i++) {
             System.out.println("Team: " + teams.get(i));
             for (int j = 0; j < players.size(); j++) {
-                int totalgAndAgoals= goals.get(j) + assists.get(j);
+                int totalAssGoals= goals.get(j) + assists.get(j);
                 System.out.print("Player: " + players.get(j) + "\n");
                 System.out.print("Goals: " + goals.get(j) + "\n");
                 System.out.print("Assists: " + assists.get(j) + "\n");
-                System.out.print("Total goals and assists: " + totalgAndAgoals + "\n");
+                System.out.print("Total goals and assists: " + totalAssGoals + "\n");
             }
 
 
