@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Player {
@@ -26,21 +25,12 @@ public class Player {
                 assists = input.nextInt();
                 input.nextLine();
                 System.out.println("Player: " + name + " Goals: " + goals + " Assists: " + assists);
-
-                System.out.println("Total Points: " + (goals + assists));
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
     }
-    public void displayPlayerOutput() {
-        Team team = new Team();
-        for (int i =0; i < team.teamName.length(); i++) {
-            System.out.println(team.teamName);
-            System.out.println("Player: " + name + " Goals: " + goals + " Assists: " + assists);
-            System.out.println("Total Points: " + (goals + assists));
-        }
-    }
 }
+
 
 
 
