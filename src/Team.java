@@ -1,7 +1,9 @@
+import java.util.Random;
 import java.util.Scanner;
 public class Team {
     public String teamName;
-    public int budget;
+
+    public int budget = 100000;
     Player[] players;
     public int totalPoints;
 
@@ -25,6 +27,13 @@ public class Team {
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
+    }
+    public void budgetting(){
+        Random rand = new Random();
+        int randomBudget = rand.nextInt(budget);
+        System.out.println("Your team has a budget of: " + randomBudget);
+
+
     }
 }
 

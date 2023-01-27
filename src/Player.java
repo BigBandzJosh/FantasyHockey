@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Player {
@@ -19,17 +20,22 @@ public class Player {
                     System.out.println("Enter the name of player: ");
                     name = input.nextLine();
                 }
-                System.out.println("Enter the number of goals scored by " + name + ": ");
-                goals = input.nextInt();
-                System.out.println("Enter the number of assists by " + name + ": ");
-                assists = input.nextInt();
-                input.nextLine();
+                try {
+                    System.out.println("Enter the number of goals scored by " + name + ": ");
+                    goals = input.nextInt();
+                    System.out.println("Enter the number of assists by " + name + ": ");
+                    assists = input.nextInt();
+                    input.nextLine();
+                } catch (InputMismatchException e) {
+                    System.out.println("Error: " + e + "\n" + "Please enter a valid number.");
+                }
                 System.out.println("Player: " + name + " Goals: " + goals + " Assists: " + assists);
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
     }
-}
+    }
+
 
 
 

@@ -24,19 +24,33 @@ public class Main {
             }
         }
         // this for loop prints out the team name, the players and their stats
-        for (int i = 0; i < team.length; i++) {
-            System.out.println("Team: " + team[i].teamName);
-            for (int k = 0; k < team.length; k++) {
-                System.out.println("Player: " + team[i].players[k].name + " Goals: " + team[i].players[k].goals + " Assists: " + team[i].players[k].assists);
-            }
 
-        }
         // this for loop prints out the total points for each team
         for (int i = 0; i < team.length; i++) {
             System.out.println("Team: " + team[i].teamName + " Total Points: " + team[i].totalPoints);
+            team[i].budgetting();
+        }
+        // this for loop prints out the team with the most points
+
+        for (int i = 0; i < team.length; i++) {
+            if (team[i].totalPoints > 20) {
+                System.out.println("Team " + team[i].teamName);
+                System.out.println("Team Rating: "+ "***");
+            } else if (team[i].totalPoints >= 10) {
+                System.out.println("Team " + team[i].teamName);
+                System.out.println("Team Rating: "+ "**");
+            } else if (team[i].totalPoints > 0) {
+                System.out.println("Team " + team[i].teamName);
+                System.out.println("Team Rating: "+ "*");
+            } else if (team[i].totalPoints == 0) {
+                System.out.println("Team " + team[i].teamName);
+                System.out.println("Team Rating: "+ "you suck!");
+            }
         }
     }
+
 }
+
 
 
 
