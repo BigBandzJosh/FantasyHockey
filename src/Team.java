@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Team {
     public String teamName;
     public int budget;
-
     Player[] players;
 
     public Team() {

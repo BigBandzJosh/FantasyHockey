@@ -5,7 +5,6 @@ public class Player {
     public String name;
     public int goals;
     public int assists;
-
     public Player () {
         this.name = name;
         this.goals = goals;
@@ -29,10 +28,6 @@ public class Player {
                 System.out.println("Player: " + name + " Goals: " + goals + " Assists: " + assists);
 
                 System.out.println("Total Points: " + (goals + assists));
-
-
-
-
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
