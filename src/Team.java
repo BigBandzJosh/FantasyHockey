@@ -6,12 +6,12 @@ public class Team {
     public double budget = 100000;
     Player[] players;
     public int totalPoints;
-
     public Team() {
         this.teamName = teamName;
         this.budget = budget;
         this.players = players;
     }
+    //this method creates the team name
     public void teamInfo() {
         Scanner input = new Scanner(System.in);
         try {
@@ -30,7 +30,6 @@ public class Team {
     }
     public void budgetting(){
         Random rand = new Random();
-
         double randomBudget = rand.nextDouble(budget);
         System.out.println("Your team has a budget of: ");
         System.out.printf("%.2f \n", randomBudget);
