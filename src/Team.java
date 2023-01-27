@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Team {
     public String teamName;
 
-    public int budget = 100000;
+    public double budget = 100000;
     Player[] players;
     public int totalPoints;
 
@@ -30,10 +30,10 @@ public class Team {
     }
     public void budgetting(){
         Random rand = new Random();
-        int randomBudget = rand.nextInt(budget);
-        System.out.println("Your team has a budget of: " + randomBudget);
 
-
+        double randomBudget = rand.nextDouble(budget);
+        System.out.println("Your team has a budget of: ");
+        System.out.printf("%.2f \n", randomBudget);
     }
 }
 
