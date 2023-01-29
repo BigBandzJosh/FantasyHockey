@@ -29,10 +29,14 @@ public class Player {
                 } catch (InputMismatchException e) {
                     System.out.println("Error: " + e + "\n" + "Please enter a valid number.");
                 }
-                System.out.println("Player: " + name + " Goals: " + goals + " Assists: " + assists);
+            System.out.println("Player: " + name + " Goals: " + goals + " Assists: " + assists);
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
+
+    }
+    public void displayPlayerInfo() {
+        System.out.println("Player: " + name + " Goals: " + goals + " Assists: " + assists);
     }
     }
 

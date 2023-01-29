@@ -28,11 +28,16 @@ public class Team {
             System.out.println("Error: " + e);
         }
     }
+    public void displayTeamInfo() {
+        System.out.println("Team: " + teamName);
+    }
+
     public void budgetting(){
         Random rand = new Random();
         double randomBudget = rand.nextDouble(budget);
         System.out.println("Your team has a budget of: ");
         System.out.printf("%.2f \n", randomBudget);
     }
-}
+    }
+
 

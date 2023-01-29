@@ -23,13 +23,16 @@ public class Main {
         }
         // this for loop prints out the team name, the players and their stats
         for (int i = 0; i < team.length; i++) {
-            System.out.println("Team: " + team[i].teamName);
+            System.out.println("------------------------");
+            team[i].displayTeamInfo();
             for (int j = 0; j < team[i].players.length; j++) {
-                System.out.println("Player: " + team[i].players[j].name + " Goals: " + team[i].players[j].goals + " Assists: " + team[i].players[j].assists);
+                System.out.println("------------------------");
+                team[i].players[j].displayPlayerInfo();
             }
         }
         // this for loop prints out the team with the most points
         for (int i = 0; i < team.length; i++) {
+            System.out.println("------------------------");
             if (team[i].totalPoints > 20) {
                 System.out.println("Team: " + team[i].teamName + " Total Points: " + team[i].totalPoints);
                 System.out.println("Team Rating: "+ "***");
