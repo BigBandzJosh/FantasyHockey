@@ -21,7 +21,6 @@ public class Team {
                 System.out.println("Error: Name must be more than 3 characters. Please enter a valid name.");
                 System.out.println("Enter the name of the team: ");
                 teamName = input.nextLine();
-                players = new Player[3];
             }
             System.out.println("Team: " + teamName);
         } catch (Exception e) {

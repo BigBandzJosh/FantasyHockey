@@ -26,7 +26,6 @@ public class Main {
             System.out.println("------------------------");
             team[i].displayTeamInfo();
             for (int j = 0; j < team[i].players.length; j++) {
-                System.out.println("------------------------");
                 team[i].players[j].displayPlayerInfo();
             }
         }
@@ -34,19 +33,23 @@ public class Main {
         for (int i = 0; i < team.length; i++) {
             System.out.println("------------------------");
             if (team[i].totalPoints > 20) {
-                System.out.println("Team: " + team[i].teamName + " Total Points: " + team[i].totalPoints);
+                System.out.println("Team: " + team[i].teamName);
+                System.out.println("Total Points: " + team[i].totalPoints);
                 System.out.println("Team Rating: "+ "***");
                 team[i].budgetting();
             } else if (team[i].totalPoints >= 10) {
-                System.out.println("Team: " + team[i].teamName + " Total Points: " + team[i].totalPoints);
+                System.out.println("Team: " + team[i].teamName);
+                System.out.println("Total Points: " + team[i].totalPoints);
                 System.out.println("Team Rating: "+ "**");
                 team[i].budgetting();
             } else if (team[i].totalPoints > 0) {
-                System.out.println("Team: " + team[i].teamName + " Total Points: " + team[i].totalPoints);
+                System.out.println("Team: " + team[i].teamName);
+                System.out.println("Total Points: " + team[i].totalPoints);
                 System.out.println("Team Rating: "+ "*");
                 team[i].budgetting();
             } else if (team[i].totalPoints == 0) {
-                System.out.println("Team: " + team[i].teamName + " Total Points: " + team[i].totalPoints);
+                System.out.println("Team: " + team[i].teamName);
+                System.out.println("Total Points: " + team[i].totalPoints);
                 System.out.println("Team Rating: "+ "you suck!");
                 team[i].budgetting();
             }
