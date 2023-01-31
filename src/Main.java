@@ -35,28 +35,29 @@ public class Main {
             if (team[i].totalPoints > 20) {
                 System.out.println("Team: " + team[i].teamName);
                 System.out.println("Total Points: " + team[i].totalPoints);
-                System.out.println("Team Rating: "+ "***");
+                System.out.println("Team Rating: " + "***");
                 team[i].budgetting();
             } else if (team[i].totalPoints >= 10) {
                 System.out.println("Team: " + team[i].teamName);
                 System.out.println("Total Points: " + team[i].totalPoints);
-                System.out.println("Team Rating: "+ "**");
+                System.out.println("Team Rating: " + "**");
                 team[i].budgetting();
             } else if (team[i].totalPoints > 0) {
                 System.out.println("Team: " + team[i].teamName);
                 System.out.println("Total Points: " + team[i].totalPoints);
-                System.out.println("Team Rating: "+ "*");
+                System.out.println("Team Rating: " + "*");
                 team[i].budgetting();
             } else if (team[i].totalPoints == 0) {
                 System.out.println("Team: " + team[i].teamName);
                 System.out.println("Total Points: " + team[i].totalPoints);
-                System.out.println("Team Rating: "+ "you suck!");
+                System.out.println("Team Rating: " + "you suck!");
                 team[i].budgetting();
             }
         }
     }
 
 }
+// ready for marking, format is not great though
 
 
 
